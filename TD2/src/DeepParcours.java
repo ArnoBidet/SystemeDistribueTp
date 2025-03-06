@@ -22,7 +22,7 @@ public class DeepParcours extends LC0_Algorithm {
 
     @Override
     protected void onStarCenter() {
-        etatVoisins[neighboorDoor] =  getNeighborProperty("label").toString();
+        etatVoisins[neighborDoor] =  getNeighborProperty("label").toString();
         if (isRuleOne()) {
             ruleOne();
         } else if (isRuleTwo()) {
