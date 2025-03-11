@@ -56,10 +56,8 @@ public class DeepParcours extends LC0_Algorithm {
     }
 
     public void ruleTwo() {
+        setLocalProperty("label", "F");
         setNeighborProperty("label", "A");
-        setNeighborProperty("label", "F");
-
-
         etatVoisins[neighborDoor] = "A";
     }
 
