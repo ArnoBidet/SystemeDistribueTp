@@ -27,14 +27,11 @@ public class Election extends LC1_Algorithm {
 
     @Override
     protected void onStarCenter() {
-        for (int i = 0; i < getActiveDoors().size(); i++) {
-            int numPort = getActiveDoors().get(i);
-            if (isRuleOne(numPort))
-                ruleOne(numPort);
-            else if (isRuleTwo(numPort))
-                ruleTwo(numPort);
-            putProperty("Nombre voisins", getNeighborsCount(), SimulationConstants.PropertyStatus.DISPLAYED);
-        }
+        if (isRuleOne())
+            ruleOne();
+        else if (isRuleTwo())
+            ruleTwo();
+        putProperty("Nombre voisins", getNeighborsCount(), SimulationConstants.PropertyStatus.DISPLAYED);
     }
 
     @Override
@@ -42,22 +39,21 @@ public class Election extends LC1_Algorithm {
         return new Election();
     }
 
-    public Boolean isRuleOne(int doorNumber) {
+    public Boolean isRuleOne() {
         return getLocalProperty("label").equals("N")
-                && getNeighborProperty(doorNumber, "label").equals("N")
                 && getNeighborsCount() == 1;
     }
 
-    public void ruleOne(int doorNumber) {
+    public void ruleOne() {
         setLocalProperty("label", "F");
     }
 
-    public Boolean isRuleTwo(int doorNumber) {
+    public Boolean isRuleTwo() {
         return getLocalProperty("label").equals("N")
                 && getNeighborsCount() == 0;
     }
 
-    public void ruleTwo(int doorNumber) {
+    public void ruleTwo() {
         setLocalProperty("label", "E");
     }
 }
