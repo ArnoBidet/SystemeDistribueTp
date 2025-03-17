@@ -3,41 +3,25 @@ graph [
    directed 0
    node [
       id 0
-      label "A"
+      label "N"
       graphics [
-         x 573
-         y 321
+         x 349
+         y 183
       ]
    ]
    node [
       id 1
       label "N"
       graphics [
-         x 496
-         y 263
+         x 478
+         y 183
       ]
    ]
    node [
       id 2
       label "N"
       graphics [
-         x 601
-         y 239
-      ]
-   ]
-   node [
-      id 3
-      label "N"
-      graphics [
-         x 586
-         y 401
-      ]
-   ]
-   node [
-      id 4
-      label "N"
-      graphics [
-         x 501
+         x 583
          y 183
       ]
    ]
@@ -45,40 +29,104 @@ graph [
       id 5
       label "N"
       graphics [
-         x 398
-         y 279
+         x 702
+         y 183
       ]
    ]
    node [
       id 6
       label "N"
       graphics [
-         x 623
-         y 162
+         x 702
+         y 280
       ]
    ]
    node [
       id 7
-      label "N"
+      label "A"
       graphics [
-         x 721
-         y 289
+         x 590
+         y 280
       ]
    ]
    node [
       id 8
       label "N"
       graphics [
-         x 525
-         y 474
+         x 477
+         y 280
       ]
    ]
    node [
       id 9
       label "N"
       graphics [
-         x 696
-         y 467
+         x 349
+         y 280
+      ]
+   ]
+   node [
+      id 11
+      label "N"
+      graphics [
+         x 349
+         y 390
+      ]
+   ]
+   node [
+      id 12
+      label "N"
+      graphics [
+         x 475
+         y 390
+      ]
+   ]
+   node [
+      id 13
+      label "N"
+      graphics [
+         x 592
+         y 390
+      ]
+   ]
+   node [
+      id 14
+      label "N"
+      graphics [
+         x 702
+         y 390
+      ]
+   ]
+   node [
+      id 15
+      label "N"
+      graphics [
+         x 702
+         y 485
+      ]
+   ]
+   node [
+      id 17
+      label "N"
+      graphics [
+         x 596
+         y 485
+      ]
+   ]
+   node [
+      id 18
+      label "N"
+      graphics [
+         x 478
+         y 485
+      ]
+   ]
+   node [
+      id 19
+      label "N"
+      graphics [
+         x 349
+         y 485
       ]
    ]
    edge [
@@ -88,56 +136,140 @@ graph [
       weight 1.0
    ]
    edge [
-      source 0
+      source 1
       target 2
       label ""
       weight 1.0
    ]
    edge [
-      source 0
-      target 3
-      label ""
-      weight 1.0
-   ]
-   edge [
-      source 1
-      target 4
-      label ""
-      weight 1.0
-   ]
-   edge [
-      source 1
+      source 2
       target 5
       label ""
       weight 1.0
    ]
    edge [
-      source 2
+      source 5
       target 6
       label ""
       weight 1.0
    ]
    edge [
-      source 2
+      source 6
       target 7
       label ""
       weight 1.0
    ]
    edge [
-      source 3
+      source 7
       target 8
       label ""
       weight 1.0
    ]
    edge [
-      source 3
+      source 8
       target 9
       label ""
       weight 1.0
    ]
    edge [
+      source 9
+      target 11
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 11
+      target 12
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 12
+      target 13
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 13
+      target 14
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 14
+      target 15
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 15
+      target 17
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 17
+      target 18
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 18
+      target 19
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 19
+      target 11
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 9
+      target 0
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 8
+      target 1
+      label ""
+      weight 1.0
+   ]
+   edge [
       source 7
-      target 9
+      target 2
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 12
+      target 8
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 13
+      target 7
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 14
+      target 6
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 18
+      target 12
+      label ""
+      weight 1.0
+   ]
+   edge [
+      source 13
+      target 17
       label ""
       weight 1.0
    ]

@@ -15,13 +15,17 @@ public class SpanningTree extends LC1_Algorithm {
 
     @Override
     protected void onStarCenter() {
+        int a_neigbors = 0;
         for(int i = 0; i < getActiveDoors().size(); i++){
             int numPort = getActiveDoors().get(i);
             if (getLocalProperty("label").equals("N") && getNeighborProperty(numPort,"label").equals("A")) {
                 setLocalProperty("label", "A");
                 setDoorState(new MarkedState(true), numPort);
-            }
+            } else if(getNeighborProperty(numPort,"label").equals("A"))
+                a_neigbors++;
         }
+        if(a_neigbors == getActiveDoors().size())
+            localTermination();
     }
 
     @Override
