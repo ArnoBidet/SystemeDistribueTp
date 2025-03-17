@@ -21,11 +21,11 @@ public class SpanningTree extends LC1_Algorithm {
             if (getLocalProperty("label").equals("N") && getNeighborProperty(numPort,"label").equals("A")) {
                 setLocalProperty("label", "A");
                 setDoorState(new MarkedState(true), numPort);
-            } else if(getNeighborProperty(numPort,"label").equals("A"))
+            } else if(getNeighborProperty(numPort,"label").equals("A") || getNeighborProperty(numPort,"label").equals("W"))
                 a_neigbors++;
         }
         if(a_neigbors == getActiveDoors().size())
-            localTermination();
+            setLocalProperty("label", "W");
     }
 
     @Override
